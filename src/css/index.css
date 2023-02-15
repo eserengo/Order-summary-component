@@ -1,0 +1,155 @@
+/*
+ Name: Red Hat Display.
+ Description: A Frontendmentor.io coding challenge.
+ Author: Federico Borzani
+ Author URL:  https://github.com/eserengo/
+*/
+
+:root {
+
+  /* --- FONTS --- */
+
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  --FontNormal: 500;
+  --FontBold: 700;
+  --FontBolder: 900;
+
+  /* --- COLOR PALETTE --- */
+
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+  --White: hsl(0, 0%, 99%);
+}
+
+body {
+  min-width: 300px;
+  background-color: var(--PaleBlue);
+}
+
+.card {
+  background-color: var(--White);
+  border-radius: 16px;
+  width: 300px;
+  margin: 5% auto;
+  box-shadow: 0px 1px 4px var(--DarkBlue), 0px 1px 8px var(--DesaturatedBlue), 0px 1px 16px var(--PaleBlue);
+}
+
+.hero {
+  width: 100%;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.primary.title {
+  color: var(--DarkBlue);
+  font-size: 125%;
+  font-weight: var(--FontBolder);
+  letter-spacing: 1px;
+  padding: 10% 0% 5%;
+}
+
+.para {
+  color: var(--DesaturatedBlue);
+  font-size: 80%;
+  font-weight: var(--FontNormal);
+  padding: 0% 10%;
+}
+
+section {
+  background-color: var(--VeryPaleBlue);
+  width: 80%;
+  padding: 5%;
+  margin-top: 5%;
+  gap: 24px;
+  border-radius: 8px;
+}
+
+section span {
+  font-size: 70%;
+  color: var(--DesaturatedBlue);
+}
+
+section strong {
+  color: var(--DarkBlue);
+  font-weight: var(--FontBolder);
+}
+
+.link {
+  font-family: "Red Hat Display";
+  font-size: 70%;
+  font-weight: var(--FontBolder);
+  color: var(--BrightBlue);
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+}
+
+.button {
+  display: block;
+  width: 90%;
+  height: 48px;
+  font-size: 80%;
+  font-weight: var(--FontBolder);
+  border: none;
+  border-radius: 8px;
+  opacity: 75%;
+}
+
+.primary.button {
+  background-color: var(--BrightBlue);
+  color: var(--White);
+  margin: 5%;
+}
+
+.secondary.button {
+  background-color: var(--PaleBlue);
+  color: var(--DesaturatedBlue);
+  margin: 0% 5% 10%;
+}
+
+.primary.button:hover:not(.disabled:hover),
+.secondary.button:hover:not(.disabled:hover) {
+  opacity: 100%;
+  box-shadow: 0px 1px 8px var(--DesaturatedBlue);
+}
+
+.attribution {
+  display: block;
+  margin: auto;
+  font-size: 50%;
+  font-weight: var(--FontNormal);
+}
+
+.anchor {
+  color: var(--BrightBlue);
+}
+
+.modal {
+  z-index: 1;
+  background-color: var(--VeryPaleBlue);
+  border: 1px solid var(--VeryPaleBlue);
+  border-radius: 16px;
+  box-shadow: 0px 1px 4px var(--DarkBlue), 0px 1px 8px var(--DesaturatedBlue), 0px 1px 16px var(--PaleBlue);
+  color: var(--DarkBlue);
+  padding: 2.5%;
+  width: 275px;
+  height: 200px;
+}
+
+.secondary.title {
+  color: var(--DarkBlue);
+  font-size: 125%;
+  font-weight: var(--FontBolder);
+  letter-spacing: 1px;
+  margin-top: 25%;
+}
+
+.fa-times {
+  font-size: 150%;
+  color: var(--DarkBlue);
+}
